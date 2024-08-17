@@ -9,14 +9,13 @@ The Grievance Management Website is designed to streamline the process of submit
 - **User Registration:** Users can create accounts by providing their name, email, and password.
 - **User Login:** Secure login functionality for registered users.
 - **Grievance Submission:** Users can submit grievances with necessary details and supporting documents.
-- **Admin Notification:** Automatic email notifications to the admin upon new grievance submissions.
 - **Admin Dashboard:** Admins can view, manage, and resolve grievances.
 - **Responsive Design:** Works seamlessly across desktop, tablet, and mobile devices.
 - **Security:** User data is securely encrypted, and JWT is used for session management.
 
 ## Technology Stack
 
-- **Frontend:** HTML5, CSS3, JavaScript (with potential for React.js or Vue.js)
+- **Frontend:** HTML5, CSS3, JavaScript 
 - **Backend:** Node.js with Express framework
 - **Database:** MongoDB
 - **Email Service:** SMTP using Nodemailer
