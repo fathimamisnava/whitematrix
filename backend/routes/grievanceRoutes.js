@@ -16,7 +16,7 @@ const transporter = nodemailer.createTransport({
     port: 465,
     secure: true, 
     auth: {
-        user: 'devadathan468@gmail.com',
+        user: 'misnoos1723@gmail.com',
         pass: 'yeozqjgeqjlowtzi'
     }
 });
@@ -46,7 +46,7 @@ router.post('/submit', auth, upload.single('supportingDoc'), async (req, res) =>
         // Send email notification
         const mailOptions = {
             from: process.env.EMAIL_USER,
-            to: 'dathan468@gmail.com', // Admin's email address
+            to: 'misnoos1723@gmail.com', // Admin's email address
             subject: 'New Grievance Submitted',
             text: `A new grievance has been submitted.\n\nType: ${type}\nDescription: ${description}`
         };

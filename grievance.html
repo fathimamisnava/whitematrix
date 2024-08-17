@@ -3,35 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Submit Grievance</title>
+    <title>Grievance Submission Form</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50; /* Green */
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="file"], select, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #4CAF50; /* Green */
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049; /* Darker Green */
+        }
+        footer {
+            background-color: #45a049;;/* Dark Green */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Submit Grievance</h1>
+        <h1>Grievance Submission Portal</h1>
         <nav>
-            <a href="home.html">Home</a> 
-            <!-- <a href="my-grievances.html">My Grievances</a>  -->
+            <a href="home.html">Home</a>
             <a href="login.html">Logout</a>
         </nav>
     </header>
     <main>
         <form id="grievance-form" enctype="multipart/form-data">
-            <label for="type">Grievance Type:</label>
+            <label for="type">Type of Grievance:</label>
             <select id="type" name="type" required>
                 <option value="general">General</option>
                 <option value="technical">Technical</option>
-                <option value="billing">Billing</option>
+                <option value="Website Issues">Website Issues</option>
+                <option value="service-quality">Service Quality</option>
             </select>
-            <label for="description">Description:</label>
+            <label for="description">Detailed Description:</label>
             <textarea id="description" name="description" required></textarea>
-            <label for="supportingDoc">Supporting Documents:</label>
+            <label for="supportingDoc">Attach Supporting Documents:</label>
             <input type="file" id="supportingDoc" name="supportingDoc">
-            <button type="submit">Submit</button>
+            <button type="submit">Submit Grievance</button>
         </form>
     </main>
     <footer>
-        <p>&copy; 2024 Grievance Portal</p>
+        <p>&copy; 2024 Grievance System.</p>
     </footer>
     <script src="scripts.js"></script>
 </body>
